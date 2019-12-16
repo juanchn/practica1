@@ -12,6 +12,7 @@ public class semana extends javax.swing.JFrame {
 
         btnmensaje = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        lblmensaje1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -25,6 +26,8 @@ public class semana extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("jLabel1");
 
+        lblmensaje1.setText("jLabel2");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -32,11 +35,13 @@ public class semana extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(103, 103, 103)
-                        .addComponent(btnmensaje))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(119, 119, 119)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblmensaje1)
+                            .addComponent(btnmensaje))))
                 .addContainerGap(220, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -46,7 +51,9 @@ public class semana extends javax.swing.JFrame {
                 .addComponent(btnmensaje)
                 .addGap(49, 49, 49)
                 .addComponent(jLabel1)
-                .addContainerGap(130, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(lblmensaje1)
+                .addContainerGap(98, Short.MAX_VALUE))
         );
 
         pack();
@@ -55,6 +62,7 @@ public class semana extends javax.swing.JFrame {
     private void btnmensajeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnmensajeActionPerformed
        
        btnmensaje.setText("Hola..");
+       lblmensaje1.setText("Hola como te va.."); 
        
     }//GEN-LAST:event_btnmensajeActionPerformed
 
@@ -96,5 +104,6 @@ public class semana extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnmensaje;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel lblmensaje1;
     // End of variables declaration//GEN-END:variables
 }
